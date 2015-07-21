@@ -48,7 +48,7 @@ void initGUI()
   initlock(&gui_lock, "gui");
 }
 
-inline int isAlpha(RGB *color)
+int isAlpha(RGB *color)
 {
   if ((color->R == color->G) && (color->R == color->B) && (color->R == 0x00))
     return 1;
